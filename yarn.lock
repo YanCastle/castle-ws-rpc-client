@@ -2,22 +2,33 @@
 # yarn lockfile v1
 
 
+"@ctsy/rpc-client@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@ctsy/rpc-client/-/rpc-client-1.0.0.tgz#b865b15dac287d4678c5de18a4ad3e4fb73a87b2"
+  integrity sha512-UhNBHcL28MiNzIYCsxvtJcq9nbGCJ/zJPgxPkCz5CM7h8GEpbtaNOIdz1lP852WSqY5UsT2lgdLXq8cSc90ryQ==
+  dependencies:
+    "@ctsy/rpc" "^1.0.4"
+    debug "^4.1.1"
+    eventemitter3 "^3.1.0"
+
+"@ctsy/rpc@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@ctsy/rpc/-/rpc-1.0.4.tgz#338c8de59b99032a31e8415361ff0ee1e50a3df3"
+  integrity sha512-+fMoG9vidNfXn+O5hxt9wZAqjSTRh+KqdOZzjoJQ9yfUDztLcWgQGvXLvEwwVvoF+pRoDhXlUd1CkV39aFD0Nw==
+  dependencies:
+    buffer "^5.2.1"
+
 "@types/node@^10.12.15":
   version "10.12.15"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.15.tgz#20e85651b62fd86656e57c9c9bc771ab1570bc59"
   integrity sha512-9kROxduaN98QghwwHmxXO2Xz3MaWf+I1sLVAA6KJDF5xix+IyXVhds0MAfdNwtcpSrzhaTsNB0/jnL86fgUhqA==
-
-async-limiter@~1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/async-limiter/-/async-limiter-1.0.0.tgz#78faed8c3d074ab81f22b4e985d79e8738f720f8"
-  integrity sha512-jp/uFnooOiO+L211eZOoSyzpOITMXx1rBITauYykG3BRYPu8h0UcxsPNB04RR5vo4Tyz3+ay17tR6JVf9qzYWg==
 
 base64-js@^1.0.2:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.3.0.tgz#cab1e6118f051095e58b5281aea8c1cd22bfc0e3"
   integrity sha512-ccav/yGvoa80BQDljCxsmmQ3Xvx60/UpBIij5QN21W3wBi/hhIC9OoO+KLpu9IJTS9j4DRVJ3aDDF9cMSoa2lw==
 
-buffer@^5.2.0, buffer@^5.2.1:
+buffer@^5.2.1:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/buffer/-/buffer-5.2.1.tgz#dd57fa0f109ac59c602479044dca7b8b3d0b71d6"
   integrity sha512-c+Ko0loDaFfuPWiL02ls9Xd3GO3cPVmUobQ6t3rXNUk304u6hGq+8N/kFi+QEIKhzK3uwolVhLzszmfLmMLnqg==
@@ -25,21 +36,12 @@ buffer@^5.2.0, buffer@^5.2.1:
     base64-js "^1.0.2"
     ieee754 "^1.1.4"
 
-castle-rpc-client@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/castle-rpc-client/-/castle-rpc-client-2.0.1.tgz#a5414f9e0f70bcfff9248669ec8099a2b7adacb6"
-  integrity sha512-3SjWlvFk4W+SLF6OwKtJca5dYFkTiisUGLxT9GvgFTZA7v/GO4IeYE+aiQfcPs2kgiy3OwUOHOIRejnS9rDGPQ==
+debug@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.1.1.tgz#3b72260255109c6b589cee050f1d516139664791"
+  integrity sha512-pYAIzeRo8J6KPEaJ0VWOh5Pzkbw/RetuzehGM7QRRX5he4fPHx2rdKMB256ehJCkX+XRQm16eZLqLNS8RSZXZw==
   dependencies:
-    buffer "^5.2.1"
-    castle-rpc "^2.0.0"
-    eventemitter3 "^3.1.0"
-
-castle-rpc@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/castle-rpc/-/castle-rpc-2.0.0.tgz#78c4b5f6dd870bb407250ba381d9a1cc5f246b87"
-  integrity sha512-nmi/i/z2nU6XmCcGbKHD2R214LBhoZljd30T885Leh7r6lSGUfzhVtj/pT34dN2FyogGp8VI4Uy+zvjfIqAxhA==
-  dependencies:
-    buffer "^5.2.0"
+    ms "^2.1.1"
 
 eventemitter3@^3.1.0:
   version "3.1.0"
@@ -56,9 +58,7 @@ isomorphic-ws@^4.0.1:
   resolved "https://registry.yarnpkg.com/isomorphic-ws/-/isomorphic-ws-4.0.1.tgz#55fd4cd6c5e6491e76dc125938dd863f5cd4f2dc"
   integrity sha512-BhBvN2MBpWTaSHdWRb/bwdZJ1WaehQ2L1KngkCkfLUGF0mAWAT1sQUQacEmQ0jXkFw/czDXPNQSL5u2/Krsz1w==
 
-ws@^6.1.2:
-  version "6.1.2"
-  resolved "https://registry.yarnpkg.com/ws/-/ws-6.1.2.tgz#3cc7462e98792f0ac679424148903ded3b9c3ad8"
-  integrity sha512-rfUqzvz0WxmSXtJpPMX2EeASXabOrSMk1ruMOV3JBTBjo4ac2lDjGGsbQSyxj8Odhw5fBib8ZKEjDNvgouNKYw==
-  dependencies:
-    async-limiter "~1.0.0"
+ms@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.1.tgz#30a5864eb3ebb0a66f2ebe6d727af06a09d86e0a"
+  integrity sha512-tgp+dl5cGk28utYktBsrFqA7HKgrhgPsg6Z/EfhWI4gl1Hwq8B/GmY/0oXZ6nF8hDVesS/FpnYaD/kOWhYQvyg==

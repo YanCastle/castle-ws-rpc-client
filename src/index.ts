@@ -1,4 +1,4 @@
-import RPCClient from 'castle-rpc-client/dist/index';
+import RPCClient from '@ctsy/rpc-client/dist/index';
 declare let require: any;
 const ws = require('isomorphic-ws')
 export default class RPC extends RPCClient {
