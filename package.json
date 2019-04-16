@@ -11,6 +11,7 @@
     "READMD.md",
     "yarn.lock"
   ],
+  "keywords": ["rpc", "websocket-rpc", "castle", "castle-rpc", "castle-ws-rpc-client"],
   "license": "MIT",
   "dependencies": {
     "@ctsy/rpc-client": "^1.0.0",
