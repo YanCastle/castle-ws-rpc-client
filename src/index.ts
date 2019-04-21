@@ -1,5 +1,6 @@
 import RPCClient from '@ctsy/rpc-client';
 import { RPC, RPCType } from '@ctsy/rpc';
+import { Buffer } from 'buffer'
 declare let require: any;
 const ws = require('isomorphic-ws')
 export default class WSRPC extends RPCClient {
@@ -19,7 +20,7 @@ export default class WSRPC extends RPCClient {
             this.onopen();
         }
         this.ws.onmessage = (ev) => {
-            this.onmessage(ev.data, this.ws);
+            this.onmessage(Buffer.from(ev.data), this.ws);
         }
         this.ws.onclose = (ev) => {
             setTimeout(() => {
@@ -27,9 +28,9 @@ export default class WSRPC extends RPCClient {
             }, 1000)
         }
         this.ws.onerror = (ev) => {
-            setTimeout(() => {
-                this.create()
-            }, 1000)
+            // setTimeout(() => {
+            //     this.create()
+            // }, 1000)
         }
     }
     async send(rpc: RPC) {
@@ -40,10 +41,6 @@ export default class WSRPC extends RPCClient {
         }
     }
     async onopen() {
-        try {
-            await this.request('', '', { Type: RPCType.Login, Timeout: 10 })
-        } catch (error) {
-            this.ws.close()
-        }
+        this.onconnected();
     }
 }

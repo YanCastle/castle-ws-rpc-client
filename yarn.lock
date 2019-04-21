@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@ctsy/rpc-client@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@ctsy/rpc-client/-/rpc-client-1.0.3.tgz#95294a5e56b8a8e11f9125763cad89f9178d8837"
-  integrity sha512-ZeDGn7qUgxDTbDozn3+JV8WXqeKXvcc3CxihzJG66bu5Y8Ug5I8Ghk/OdmTzezsulxVCImyEiHtC7/Nj6zinbg==
+"@ctsy/rpc-client@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@ctsy/rpc-client/-/rpc-client-1.0.4.tgz#77ee31eb36898eb962fcb05ccff697099b8df69a"
+  integrity sha512-j8jzOwV8vnnwEIhiNzsv0w4kkvglToJ0B9ijWzofovAN58niwARS60yYwho9i39INhDTLHO+MtBv7ojgfWyD4g==
   dependencies:
     "@ctsy/rpc" "^1.0.4"
     debug "^4.1.1"
