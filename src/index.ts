@@ -1,4 +1,4 @@
-import RPCClient from '@ctsy/rpc-client';
+import RPCClient, { ClientEvent } from '@ctsy/rpc-client';
 import { RPC, RPCType } from '@ctsy/rpc';
 import { Buffer } from 'buffer'
 declare let require: any;
@@ -23,11 +23,13 @@ export default class WSRPC extends RPCClient {
             this.onmessage(Buffer.from(ev.data), this.ws);
         }
         this.ws.onclose = (ev) => {
+            this.emit(ClientEvent.LINK_CLOSED,this)
             setTimeout(() => {
                 this.create()
             }, 1000)
         }
         this.ws.onerror = (ev) => {
+            this.emit(ClientEvent.LINK_ERROR, this)
             // setTimeout(() => {
             //     this.create()
             // }, 1000)
