@@ -2,19 +2,19 @@
 # yarn lockfile v1
 
 
-"@ctsy/rpc-client@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@ctsy/rpc-client/-/rpc-client-1.0.4.tgz#77ee31eb36898eb962fcb05ccff697099b8df69a"
-  integrity sha512-j8jzOwV8vnnwEIhiNzsv0w4kkvglToJ0B9ijWzofovAN58niwARS60yYwho9i39INhDTLHO+MtBv7ojgfWyD4g==
+"@ctsy/rpc-client@^1.0.12":
+  version "1.0.13"
+  resolved "https://registry.yarnpkg.com/@ctsy/rpc-client/-/rpc-client-1.0.13.tgz#5f9aa4102dd849df093d37331bc9446f43e5b424"
+  integrity sha512-wCldLB6gFxv9CnXDKto38HgIB3fq5MBWav0anTZrA/gIYs3p/KUS3UQ9sEQs4OjlNtcLEvkPOeH/9c3wzXs6/Q==
   dependencies:
-    "@ctsy/rpc" "^1.0.4"
+    "@ctsy/rpc" "^1.0.10"
     debug "^4.1.1"
     eventemitter3 "^3.1.0"
 
-"@ctsy/rpc@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@ctsy/rpc/-/rpc-1.0.4.tgz#338c8de59b99032a31e8415361ff0ee1e50a3df3"
-  integrity sha512-+fMoG9vidNfXn+O5hxt9wZAqjSTRh+KqdOZzjoJQ9yfUDztLcWgQGvXLvEwwVvoF+pRoDhXlUd1CkV39aFD0Nw==
+"@ctsy/rpc@^1.0.10":
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@ctsy/rpc/-/rpc-1.0.10.tgz#d9be86e4787462b79652796bb9587e631035108a"
+  integrity sha512-i/2yds32wU9QsjrO4dQiqSK1iXXAhvd7hMG0gwpDd6LnJZc8gKGeeld9ByTGZygbVrENBvVRAfh6wgUK4mDtMw==
   dependencies:
     buffer "^5.2.1"
 
