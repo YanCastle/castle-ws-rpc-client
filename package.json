@@ -1,10 +1,13 @@
 {
   "name": "@ctsy/ws-rpc-client",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "repository": "https://github.com/YanCastle/castle-ws-rpc-client",
   "author": "CastleMY <490523604@qq.com>",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "scripts": {
+    "prepublish": "rm -rf dist && tsc"
+  },
   "files": [
     "dist/**/*.js",
     "dist/**/*.d.ts",
@@ -20,10 +23,10 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@ctsy/rpc-client": "^1.0.15",
-    "isomorphic-ws": "^4.0.1"
+    "@ctsy/rpc-client": "^1.0",
+    "isomorphic-ws": "^4.0"
   },
   "devDependencies": {
-    "@types/node": "^10.12.15"
+    "@types/node": "^10"
   }
 }
